@@ -1,0 +1,171 @@
+/* Common style */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 40px;
+    padding: 0 60px;
+    color: #3A3A3A;
+}
+
+/* navigation style */
+.for-large-device {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+}
+
+.for-large-device a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: #3A3A3A;
+}
+
+.for-mobile-device {
+    display: none;
+}
+
+/* Influencer Intro Section Style */
+.container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.section-intro {
+    width: 50%;
+}
+
+.section-title {
+    font-size: 52px;
+}
+
+.btn-prebook {
+    background-color: #E02C6D;
+    font-size: 16px;
+    width: 196px;
+    height: 44px;
+    color: white;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.btn-prebook span {
+    margin-left: 10px;
+}
+
+.influencer-img {
+    background-image: url(../images/Circle\ design.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.influencer-img img {
+    width: 100%;
+}
+
+/* Web Partner Styles */
+.container-web-partner {
+    margin-top: 50px;
+}
+
+.web-partner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Popular Collection Style Info */
+.items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.item-image {
+    width: 100%;
+}
+
+.filled {
+    color: orange;
+    margin-right: 3px;
+}
+
+.empty {
+    color: gray;
+    margin-right: 5px;
+}
+
+/* Style for Mobile device */
+@media only screen and (max-width: 575px) {
+    .for-large-device {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .for-mobile-device {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .for-mobile-device i {
+        color: #3A3A3A;
+    }
+
+    .section-intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .section-intro p {
+        width: 321px;
+        height: 65px;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 28px;
+        width: 404px;
+        height: 78px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .btn-prebook {
+        margin-top: 80px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .web-partner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 7px;
+    }
+
+    .items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
