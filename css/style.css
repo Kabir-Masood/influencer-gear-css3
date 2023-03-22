@@ -2,7 +2,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     margin-top: 40px;
-    padding: 0 60px;
+    padding: 10px 80px;
     color: #3A3A3A;
 }
 
@@ -31,9 +31,9 @@ body {
 
 }
 
-.section-intro {
+/* .section-intro {
     width: 50%;
-}
+} */
 
 .section-title {
     font-size: 52px;
@@ -57,6 +57,7 @@ body {
     background-image: url(../images/Circle\ design.svg);
     background-size: 100%;
     background-repeat: no-repeat;
+    width: 50%;
 }
 
 .influencer-img img {
@@ -66,6 +67,7 @@ body {
 /* Web Partner Styles */
 .container-web-partner {
     margin-top: 50px;
+    padding: 0 40px;
 }
 
 .web-partner {
@@ -75,6 +77,15 @@ body {
 }
 
 /* Popular Collection Style Info */
+.popular-collection {
+    padding: 0 40px;
+}
+
+.section-title-popular {
+    text-align: center;
+    font-size: 52px;
+}
+
 .items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -86,7 +97,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 20px;
     border-radius: 5px;
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
