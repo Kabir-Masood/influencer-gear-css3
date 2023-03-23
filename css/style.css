@@ -31,9 +31,9 @@ body {
 
 }
 
-/* .section-intro {
+.section-intro {
     width: 50%;
-} */
+}
 
 .section-title {
     font-size: 52px;
@@ -118,6 +118,10 @@ body {
 
 /* Style for Mobile device */
 @media only screen and (max-width: 575px) {
+    body {
+        padding: 0px;
+    }
+
     .for-large-device {
         display: none;
     }
@@ -132,6 +136,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin: 0 30px;
     }
 
     .for-mobile-device i {
@@ -178,5 +183,13 @@ body {
 
     .items {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .item {
+        padding: 40px;
+    }
+
+    .popular-collection {
+        padding: 0px;
     }
 }
